@@ -1,5 +1,17 @@
 import "@/app/ui/global.css";
-import { inter } from './ui/fonts';  // Note: I fixed the typo: 'inter' → 'inter'
+import { Metadata } from 'next';
+import { inter } from './ui/fonts'; 
+
+ 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+  description: 'The official Next.js Learn Dashboard built with App Router.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
+ // Note: I fixed the typo: 'inter' → 'inter'
 
 export default function RootLayout({
   children,

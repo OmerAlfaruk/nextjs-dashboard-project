@@ -39,7 +39,7 @@ export default function Page() {
             height={760}
           />
            <Image
-            src="/hero-desktop.png"
+            src="/hero-mobile.png"
             alt="Dashboard illustration"
             width={560}
             height={620}
